@@ -30,7 +30,7 @@ if __name__ == '__main__':
     parser.add_argument("--temp_folder", default='', type=str)
     parser.add_argument("--analysis_folder",
                         default='', type=str)
-    parser.add_argument("--meta", default='patient_idx,slice_idx', type=str)
+    parser.add_argument("--meta", default='patient_idx', type=str)
     parser.add_argument("--monitor", default='', type=str)
     parser.add_argument("--memory_limit", default=0, type=int)
 
@@ -61,28 +61,22 @@ if __name__ == '__main__':
         meta = args.meta.split(',')[0]
 
     # # copy to another location
-    # log_folder = args.log_folder + '_' + args.dataset_file[:-5].split('/')[-1]
-    # if not os.path.exists(log_folder):
-    #     shutil.copytree(args.log_folder, log_folder)
+    log_folder = args.log_folder + '_' + args.dataset_file[:-5].split('/')[-1]
+    if not os.path.exists(log_folder):
+         shutil.copytree(args.log_folder, log_folder)
+    if not os.path.exists(log_folder + '_temp'):
+         shutil.copytree(log_folder, log_folder + '_temp')
 
     ex = ExperimentPipeline(
         log_base_path=log_folder,
-        temp_base_path=''
+        temp_base_path=log_folder + '_temp'
     )
-    # try:
-    #     ex = ex.load_best_model(
-    #         recipe='auto',
-    #         analysis_base_path=analysis_folder,
-    #         map_meta_data=meta,
-    #     )
-    # except Exception as e:
-    #     print("Error while loading best model", e)
-    #     ex.from_file(log_folder +
-    #                  f'/model/model.{args.best_epoch:03d}.h5')
+
     ex.from_file(
         args.config_file
     ).run_external(
-        args.dataset_file
+        args.dataset_file,
+        map_meta_data=meta
     ).apply_post_processors(
         recipe='auto',
         analysis_base_path=analysis_folder,

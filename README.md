@@ -75,7 +75,7 @@ sbatch slurm_test.sh ../hnperf/2d_unet_CT_W_PET/model/model.030.h5 2d_unet_CT_W_
 
 To run external validation
 ```bash
-sbatch slurm_external.sh ../hnperf/2d_unet_CT_W_PET/model/model.030.h5 2d_unet_CT_W_PET_maastro maastro.json
+sbatch slurm_external.sh ../hnperf/2d_unet_CT_W_PET/model/model.030.h5 2d_unet_CT_W_PET maastro.json
 ```
 
 

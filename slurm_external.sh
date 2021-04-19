@@ -49,4 +49,4 @@ echo "Finished seting up files."
 nvidia-modprobe -u -c=0
 
 # Run test on external data
-singularity exec --nv deoxys-beta.sif python -u run_external.py $2 /net/fs-1/Ngoc/hnperf/$3 $1
+singularity exec --nv deoxys-beta.sif python -u test_experiment_external.py $2 /net/fs-1/Ngoc/hnperf/$3 $1

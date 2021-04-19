@@ -60,10 +60,10 @@ if __name__ == '__main__':
     else:
         meta = args.meta.split(',')[0]
 
-    # copy to another location
-    log_folder = args.log_folder + '_' + args.dataset_file[:-5].split('/')[-1]
-    if not os.path.exists(log_folder):
-        shutil.copytree(args.log_folder, log_folder)
+    # # copy to another location
+    # log_folder = args.log_folder + '_' + args.dataset_file[:-5].split('/')[-1]
+    # if not os.path.exists(log_folder):
+    #     shutil.copytree(args.log_folder, log_folder)
 
     ex = ExperimentPipeline(
         log_base_path=log_folder,

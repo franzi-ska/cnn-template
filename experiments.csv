@@ -1,0 +1,41 @@
+﻿ID,Dataset,Normalisation,validation_fold,Channels,Learning_rate
+bigart_0,Oxytarget,Z-Score,1,T2w,1.00E-04
+bigart_1,Oxytarget,Z-Score,2,T2w,1.00E-04
+bigart_2,Oxytarget,Z-Score,3,T2w,1.00E-04
+bigart_3,Oxytarget,Z-Score,4,T2w,1.00E-04
+bigart_4,Oxytarget,Z-Score,5,T2w,1.00E-04
+bigart_5,Oxytarget,Z-Score + HM,1,T2w,1.00E-04
+bigart_6,Oxytarget,Z-Score + HM,2,T2w,1.00E-04
+bigart_7,Oxytarget,Z-Score + HM,3,T2w,1.00E-04
+bigart_8,Oxytarget,Z-Score + HM,4,T2w,1.00E-04
+bigart_9,Oxytarget,Z-Score + HM,5,T2w,1.00E-04
+bigart_10,Oxytarget,Z-Score,1,T2w + DW,1.00E-04
+bigart_11,Oxytarget,Z-Score,2,T2w + DW,1.00E-04
+bigart_12,Oxytarget,Z-Score,3,T2w + DW,1.00E-04
+bigart_13,Oxytarget,Z-Score,4,T2w + DW,1.00E-04
+bigart_14,Oxytarget,Z-Score,5,T2w + DW,1.00E-04
+bigart_15,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-04
+bigart_16,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-04
+bigart_17,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-04
+bigart_18,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-04
+bigart_19,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-04
+bigart_20,Oxytarget,Z-Score,1,T2w,1.00E-05
+bigart_21,Oxytarget,Z-Score,2,T2w,1.00E-05
+bigart_22,Oxytarget,Z-Score,3,T2w,1.00E-05
+bigart_23,Oxytarget,Z-Score,4,T2w,1.00E-05
+bigart_24,Oxytarget,Z-Score,5,T2w,1.00E-05
+bigart_25,Oxytarget,Z-Score + HM,1,T2w,1.00E-05
+bigart_26,Oxytarget,Z-Score + HM,2,T2w,1.00E-05
+bigart_27,Oxytarget,Z-Score + HM,3,T2w,1.00E-05
+bigart_28,Oxytarget,Z-Score + HM,4,T2w,1.00E-05
+bigart_29,Oxytarget,Z-Score + HM,5,T2w,1.00E-05
+bigart_30,Oxytarget,Z-Score,1,T2w + DW,1.00E-05
+bigart_31,Oxytarget,Z-Score,2,T2w + DW,1.00E-05
+bigart_32,Oxytarget,Z-Score,3,T2w + DW,1.00E-05
+bigart_33,Oxytarget,Z-Score,4,T2w + DW,1.00E-05
+bigart_34,Oxytarget,Z-Score,5,T2w + DW,1.00E-05
+bigart_35,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-05
+bigart_36,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-05
+bigart_37,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-05
+bigart_38,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-05
+bigart_39,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-05

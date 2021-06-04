@@ -10,9 +10,6 @@
 #SBATCH --output=outputs/training_%A.out
 #SBATCH --error=outputs/training_%A.out
 
-
-
-
 # If you would like to use more please adjust this.
 
 
@@ -22,7 +19,7 @@ echo $1
 ## Below you can put your scripts
 # If you want to load module
 module load singularity
-# module load Python/3.8.2-GCCcore-9.3.0
+
 ## Code
 # If data files aren't copied, do so
 #!/bin/bash
@@ -58,7 +55,4 @@ nvidia-modprobe -u -c=0
 
 
 # Run experiment
-singularity exec --nv deoxys.sif python experiment.py config/$1.json $HOME/performance/$1 --epochs 200  ${@:2}
-
-# copy the relevant files to _cleaned folder
-# python copy_result.py $1
+singularity exec --nv deoxys.sif python experiment.py config/bigart_$SLURM_ARRAY_TASK_ID.json $HOME/performance/bigart_$SLURM_ARRAY_TASK_ID --epochs 200  ${@:2}

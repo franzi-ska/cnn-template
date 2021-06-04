@@ -2,7 +2,19 @@ import os
 import shutil
 import sys
 
-import pandas as pd
+import csv
+
+
+
+
+def read_cvs(csv_file_path):
+
+    csv_file_path = r'C:\Users\franzihk\Downloads\bigart_0\logs.csv'
+    with open(csv_file_path) as f:
+        spamreader = csv.reader(f)
+        for row in spamreader:
+            print(row)
+
 
 experiment = sys.argv[1]
 

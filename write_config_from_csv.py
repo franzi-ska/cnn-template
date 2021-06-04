@@ -49,7 +49,7 @@ def read_csv_and_write_config_files():
         if row['Normalisation'] == 'Z-Score':
             h5_file += 'ZScore.h5'
         elif row['Normalisation'] == 'Z-Score + HM':
-            h5_file += 'MHZscore.h5'
+            h5_file += 'MHZScore.h5'
         else:
             raise Exception('Check for typos in Normalisation')
 

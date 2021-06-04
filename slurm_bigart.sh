@@ -23,11 +23,11 @@ module load singularity
 ## Code
 # If data files aren't copied, do so
 #!/bin/bash
-if [ $# -lt 1 ];
-    then
-    printf "Not enough arguments - %d\n" $#
-    exit 0
-    fi
+# if [ $# -lt 1 ];
+#     then
+#     printf "Not enough arguments - %d\n" $#
+#     exit 0
+#     fi
 
 if [ ! -d "$TMPDIR/$USER/hn_delin" ]
     then
@@ -55,4 +55,4 @@ nvidia-modprobe -u -c=0
 
 
 # Run experiment
-singularity exec --nv deoxys.sif python experiment.py config/bigart_$SLURM_ARRAY_TASK_ID.json $HOME/performance/bigart_$SLURM_ARRAY_TASK_ID --epochs 200  ${@:2}
+singularity exec --nv deoxys.sif python experiment.py config/bigart_$SLURM_ARRAY_TASK_ID.json $HOME/performance/bigart_$SLURM_ARRAY_TASK_ID --epochs 200

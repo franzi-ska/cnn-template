@@ -1,5 +1,6 @@
 #!/bin/bash
 #SBATCH --nodes=1                # Use 1 node
+#$SBATCH --ntasks-per-node=1
 #SBATCH --job-name=bigart   # sensible name for the job
 #SBATCH --mem=8G                 # Default memory per CPU is 3GB.
 #SBATCH --partition=gpu # Use the verysmallmem-partition for jobs requiring < 10 GB RAM.

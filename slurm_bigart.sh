@@ -10,6 +10,8 @@
 #SBATCH --output=outputs/training_%A.out
 #SBATCH --error=outputs/training_%A.out
 
+#SBATCH --array=0-3
+
 # If you would like to use more please adjust this.
 
 

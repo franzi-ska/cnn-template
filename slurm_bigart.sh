@@ -1,5 +1,4 @@
 #!/bin/bash
-#SBATCH --ntasks=1               # 1 core(CPU)
 #SBATCH --nodes=1                # Use 1 node
 #SBATCH --job-name=bigart   # sensible name for the job
 #SBATCH --mem=8G                 # Default memory per CPU is 3GB.
@@ -11,9 +10,6 @@
 #SBATCH --error=outputs/training_%A.out
 
 # If you would like to use more please adjust this.
-
-
-echo $1
 
 
 ## Below you can put your scripts

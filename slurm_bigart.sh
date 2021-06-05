@@ -7,10 +7,10 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mail-user=franziska.h.knuth@ntnu.no # Email me when job is done.
 #SBATCH --mail-type=ALL
-#SBATCH --output=outputs/training_%A.out
-#SBATCH --error=outputs/training_%A.out
+#SBATCH --output=outputs/bigart_%a__%A.out
+#SBATCH --error=outputs/bigart_%a__%A.out
 
-#SBATCH --array=5-39%10
+#SBATCH --array=15-19,35-39
 
 # If you would like to use more please adjust this.
 

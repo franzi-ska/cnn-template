@@ -10,8 +10,6 @@
 #SBATCH --output=outputs/bigart_%a__%A.out
 #SBATCH --error=outputs/bigart_%a__%A.out
 
-#SBATCH --array=15-19,35-39
-
 # If you would like to use more please adjust this.
 
 

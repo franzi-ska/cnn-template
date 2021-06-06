@@ -39,3 +39,8 @@ bigart_36,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-05
 bigart_37,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-05
 bigart_38,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-05
 bigart_39,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-05
+bigart_40,LARC,Z-Score,1,T2w,1.00E-04
+bigart_41,LARC,Z-Score,2,T2w,1.00E-04
+bigart_42,LARC,Z-Score,3,T2w,1.00E-04
+bigart_43,LARC,Z-Score,4,T2w,1.00E-04
+bigart_44,LARC,Z-Score,5,T2w,1.00E-04

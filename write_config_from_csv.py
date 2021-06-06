@@ -37,6 +37,8 @@ def read_csv_and_write_config_files():
 
         if row['Dataset'] == 'Oxytarget':
             h5_file += 'OxyTarget_'
+        elif row['Dataset'] == 'LARC':
+            h5_file += 'LARC_'
         if row['Channels'] == 'T2w':
             n_channel = 1
             h5_file += 'T2_'

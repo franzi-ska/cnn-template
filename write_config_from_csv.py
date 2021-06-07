@@ -52,6 +52,11 @@ def read_csv_and_write_config_files():
             h5_file += 'ZScore.h5'
         elif row['Normalisation'] == 'Z-Score + HM':
             h5_file += 'MHZScore.h5'
+        elif row['Normalisation'] == 'Z-Score + HM_onLARC':
+            h5_file += 'MHZScore_onLARC.h5'
+        elif row['Normalisation'] == 'Z-Score + HM_onOxy':
+            h5_file += 'MHZScore_onOxy.h5'
+
         else:
             raise Exception('Check for typos in Normalisation')
 

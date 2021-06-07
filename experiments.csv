@@ -1,56 +1,111 @@
-﻿ID,Dataset,Normalisation,validation_fold,Channels,Learning_rate
-bigart_0,Oxytarget,Z-Score,1,T2w,1.00E-04
-bigart_1,Oxytarget,Z-Score,2,T2w,1.00E-04
-bigart_2,Oxytarget,Z-Score,3,T2w,1.00E-04
-bigart_3,Oxytarget,Z-Score,4,T2w,1.00E-04
-bigart_4,Oxytarget,Z-Score,5,T2w,1.00E-04
-bigart_5,Oxytarget,Z-Score + HM,1,T2w,1.00E-04
-bigart_6,Oxytarget,Z-Score + HM,2,T2w,1.00E-04
-bigart_7,Oxytarget,Z-Score + HM,3,T2w,1.00E-04
-bigart_8,Oxytarget,Z-Score + HM,4,T2w,1.00E-04
-bigart_9,Oxytarget,Z-Score + HM,5,T2w,1.00E-04
-bigart_10,Oxytarget,Z-Score,1,T2w + DW,1.00E-04
-bigart_11,Oxytarget,Z-Score,2,T2w + DW,1.00E-04
-bigart_12,Oxytarget,Z-Score,3,T2w + DW,1.00E-04
-bigart_13,Oxytarget,Z-Score,4,T2w + DW,1.00E-04
-bigart_14,Oxytarget,Z-Score,5,T2w + DW,1.00E-04
-bigart_15,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-04
-bigart_16,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-04
-bigart_17,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-04
-bigart_18,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-04
-bigart_19,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-04
-bigart_20,Oxytarget,Z-Score,1,T2w,1.00E-05
-bigart_21,Oxytarget,Z-Score,2,T2w,1.00E-05
-bigart_22,Oxytarget,Z-Score,3,T2w,1.00E-05
-bigart_23,Oxytarget,Z-Score,4,T2w,1.00E-05
-bigart_24,Oxytarget,Z-Score,5,T2w,1.00E-05
-bigart_25,Oxytarget,Z-Score + HM,1,T2w,1.00E-05
-bigart_26,Oxytarget,Z-Score + HM,2,T2w,1.00E-05
-bigart_27,Oxytarget,Z-Score + HM,3,T2w,1.00E-05
-bigart_28,Oxytarget,Z-Score + HM,4,T2w,1.00E-05
-bigart_29,Oxytarget,Z-Score + HM,5,T2w,1.00E-05
-bigart_30,Oxytarget,Z-Score,1,T2w + DW,1.00E-05
-bigart_31,Oxytarget,Z-Score,2,T2w + DW,1.00E-05
-bigart_32,Oxytarget,Z-Score,3,T2w + DW,1.00E-05
-bigart_33,Oxytarget,Z-Score,4,T2w + DW,1.00E-05
-bigart_34,Oxytarget,Z-Score,5,T2w + DW,1.00E-05
-bigart_35,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-05
-bigart_36,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-05
-bigart_37,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-05
-bigart_38,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-05
-bigart_39,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-05
-bigart_40,LARC,Z-Score,1,T2w,1.00E-04
-bigart_41,LARC,Z-Score,2,T2w,1.00E-04
-bigart_42,LARC,Z-Score,3,T2w,1.00E-04
-bigart_43,LARC,Z-Score,4,T2w,1.00E-04
-bigart_44,LARC,Z-Score,5,T2w,1.00E-04
-bigart_45,LARC,Z-Score + HM_onLARC,1,T2w,1.00E-04
-bigart_46,LARC,Z-Score + HM_onLARC,2,T2w,1.00E-04
-bigart_47,LARC,Z-Score + HM_onLARC,3,T2w,1.00E-04
-bigart_48,LARC,Z-Score + HM_onLARC,4,T2w,1.00E-04
-bigart_49,LARC,Z-Score + HM_onLARC,5,T2w,1.00E-04
-bigart_50,LARC,Z-Score + HM_onOxy,1,T2w,1.00E-04
-bigart_51,LARC,Z-Score + HM_onOxy,2,T2w,1.00E-04
-bigart_52,LARC,Z-Score + HM_onOxy,3,T2w,1.00E-04
-bigart_53,LARC,Z-Score + HM_onOxy,4,T2w,1.00E-04
-bigart_54,LARC,Z-Score + HM_onOxy,5,T2w,1.00E-04
+﻿ID,Dataset,Normalisation,validation_fold,Channels,Learning_rate,Loss
+bigart_0,Oxytarget,Z-Score,1,T2w,1.00E-04,ModifiedDiceLoss
+bigart_1,Oxytarget,Z-Score,2,T2w,1.00E-04,ModifiedDiceLoss
+bigart_2,Oxytarget,Z-Score,3,T2w,1.00E-04,ModifiedDiceLoss
+bigart_3,Oxytarget,Z-Score,4,T2w,1.00E-04,ModifiedDiceLoss
+bigart_4,Oxytarget,Z-Score,5,T2w,1.00E-04,ModifiedDiceLoss
+bigart_5,Oxytarget,Z-Score + HM,1,T2w,1.00E-04,ModifiedDiceLoss
+bigart_6,Oxytarget,Z-Score + HM,2,T2w,1.00E-04,ModifiedDiceLoss
+bigart_7,Oxytarget,Z-Score + HM,3,T2w,1.00E-04,ModifiedDiceLoss
+bigart_8,Oxytarget,Z-Score + HM,4,T2w,1.00E-04,ModifiedDiceLoss
+bigart_9,Oxytarget,Z-Score + HM,5,T2w,1.00E-04,ModifiedDiceLoss
+bigart_10,Oxytarget,Z-Score,1,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_11,Oxytarget,Z-Score,2,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_12,Oxytarget,Z-Score,3,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_13,Oxytarget,Z-Score,4,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_14,Oxytarget,Z-Score,5,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_15,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_16,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_17,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_18,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_19,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-04,ModifiedDiceLoss
+bigart_20,Oxytarget,Z-Score,1,T2w,1.00E-05,ModifiedDiceLoss
+bigart_21,Oxytarget,Z-Score,2,T2w,1.00E-05,ModifiedDiceLoss
+bigart_22,Oxytarget,Z-Score,3,T2w,1.00E-05,ModifiedDiceLoss
+bigart_23,Oxytarget,Z-Score,4,T2w,1.00E-05,ModifiedDiceLoss
+bigart_24,Oxytarget,Z-Score,5,T2w,1.00E-05,ModifiedDiceLoss
+bigart_25,Oxytarget,Z-Score + HM,1,T2w,1.00E-05,ModifiedDiceLoss
+bigart_26,Oxytarget,Z-Score + HM,2,T2w,1.00E-05,ModifiedDiceLoss
+bigart_27,Oxytarget,Z-Score + HM,3,T2w,1.00E-05,ModifiedDiceLoss
+bigart_28,Oxytarget,Z-Score + HM,4,T2w,1.00E-05,ModifiedDiceLoss
+bigart_29,Oxytarget,Z-Score + HM,5,T2w,1.00E-05,ModifiedDiceLoss
+bigart_30,Oxytarget,Z-Score,1,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_31,Oxytarget,Z-Score,2,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_32,Oxytarget,Z-Score,3,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_33,Oxytarget,Z-Score,4,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_34,Oxytarget,Z-Score,5,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_35,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_36,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_37,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_38,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_39,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-05,ModifiedDiceLoss
+bigart_40,LARC,Z-Score,1,T2w,1.00E-04,ModifiedDiceLoss
+bigart_41,LARC,Z-Score,2,T2w,1.00E-04,ModifiedDiceLoss
+bigart_42,LARC,Z-Score,3,T2w,1.00E-04,ModifiedDiceLoss
+bigart_43,LARC,Z-Score,4,T2w,1.00E-04,ModifiedDiceLoss
+bigart_44,LARC,Z-Score,5,T2w,1.00E-04,ModifiedDiceLoss
+bigart_45,LARC,Z-Score + HM_onLARC,1,T2w,1.00E-04,ModifiedDiceLoss
+bigart_46,LARC,Z-Score + HM_onLARC,2,T2w,1.00E-04,ModifiedDiceLoss
+bigart_47,LARC,Z-Score + HM_onLARC,3,T2w,1.00E-04,ModifiedDiceLoss
+bigart_48,LARC,Z-Score + HM_onLARC,4,T2w,1.00E-04,ModifiedDiceLoss
+bigart_49,LARC,Z-Score + HM_onLARC,5,T2w,1.00E-04,ModifiedDiceLoss
+bigart_50,LARC,Z-Score + HM_onOxy,1,T2w,1.00E-04,ModifiedDiceLoss
+bigart_51,LARC,Z-Score + HM_onOxy,2,T2w,1.00E-04,ModifiedDiceLoss
+bigart_52,LARC,Z-Score + HM_onOxy,3,T2w,1.00E-04,ModifiedDiceLoss
+bigart_53,LARC,Z-Score + HM_onOxy,4,T2w,1.00E-04,ModifiedDiceLoss
+bigart_54,LARC,Z-Score + HM_onOxy,5,T2w,1.00E-04,ModifiedDiceLoss
+bigart_55,Oxytarget,Z-Score,1,T2w,1.00E-04,DiceLoss
+bigart_56,Oxytarget,Z-Score,2,T2w,1.00E-04,DiceLoss
+bigart_57,Oxytarget,Z-Score,3,T2w,1.00E-04,DiceLoss
+bigart_58,Oxytarget,Z-Score,4,T2w,1.00E-04,DiceLoss
+bigart_59,Oxytarget,Z-Score,5,T2w,1.00E-04,DiceLoss
+bigart_60,Oxytarget,Z-Score + HM,1,T2w,1.00E-04,DiceLoss
+bigart_61,Oxytarget,Z-Score + HM,2,T2w,1.00E-04,DiceLoss
+bigart_62,Oxytarget,Z-Score + HM,3,T2w,1.00E-04,DiceLoss
+bigart_63,Oxytarget,Z-Score + HM,4,T2w,1.00E-04,DiceLoss
+bigart_64,Oxytarget,Z-Score + HM,5,T2w,1.00E-04,DiceLoss
+bigart_65,Oxytarget,Z-Score,1,T2w + DW,1.00E-04,DiceLoss
+bigart_66,Oxytarget,Z-Score,2,T2w + DW,1.00E-04,DiceLoss
+bigart_67,Oxytarget,Z-Score,3,T2w + DW,1.00E-04,DiceLoss
+bigart_68,Oxytarget,Z-Score,4,T2w + DW,1.00E-04,DiceLoss
+bigart_69,Oxytarget,Z-Score,5,T2w + DW,1.00E-04,DiceLoss
+bigart_70,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-04,DiceLoss
+bigart_71,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-04,DiceLoss
+bigart_72,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-04,DiceLoss
+bigart_73,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-04,DiceLoss
+bigart_74,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-04,DiceLoss
+bigart_75,Oxytarget,Z-Score,1,T2w,1.00E-05,DiceLoss
+bigart_76,Oxytarget,Z-Score,2,T2w,1.00E-05,DiceLoss
+bigart_77,Oxytarget,Z-Score,3,T2w,1.00E-05,DiceLoss
+bigart_78,Oxytarget,Z-Score,4,T2w,1.00E-05,DiceLoss
+bigart_79,Oxytarget,Z-Score,5,T2w,1.00E-05,DiceLoss
+bigart_80,Oxytarget,Z-Score + HM,1,T2w,1.00E-05,DiceLoss
+bigart_81,Oxytarget,Z-Score + HM,2,T2w,1.00E-05,DiceLoss
+bigart_82,Oxytarget,Z-Score + HM,3,T2w,1.00E-05,DiceLoss
+bigart_83,Oxytarget,Z-Score + HM,4,T2w,1.00E-05,DiceLoss
+bigart_84,Oxytarget,Z-Score + HM,5,T2w,1.00E-05,DiceLoss
+bigart_85,Oxytarget,Z-Score,1,T2w + DW,1.00E-05,DiceLoss
+bigart_86,Oxytarget,Z-Score,2,T2w + DW,1.00E-05,DiceLoss
+bigart_87,Oxytarget,Z-Score,3,T2w + DW,1.00E-05,DiceLoss
+bigart_88,Oxytarget,Z-Score,4,T2w + DW,1.00E-05,DiceLoss
+bigart_89,Oxytarget,Z-Score,5,T2w + DW,1.00E-05,DiceLoss
+bigart_90,Oxytarget,Z-Score + HM,1,T2w + DW,1.00E-05,DiceLoss
+bigart_91,Oxytarget,Z-Score + HM,2,T2w + DW,1.00E-05,DiceLoss
+bigart_92,Oxytarget,Z-Score + HM,3,T2w + DW,1.00E-05,DiceLoss
+bigart_93,Oxytarget,Z-Score + HM,4,T2w + DW,1.00E-05,DiceLoss
+bigart_94,Oxytarget,Z-Score + HM,5,T2w + DW,1.00E-05,DiceLoss
+bigart_95,LARC,Z-Score,1,T2w,1.00E-04,DiceLoss
+bigart_96,LARC,Z-Score,2,T2w,1.00E-04,DiceLoss
+bigart_97,LARC,Z-Score,3,T2w,1.00E-04,DiceLoss
+bigart_98,LARC,Z-Score,4,T2w,1.00E-04,DiceLoss
+bigart_99,LARC,Z-Score,5,T2w,1.00E-04,DiceLoss
+bigart_100,LARC,Z-Score + HM_onLARC,1,T2w,1.00E-04,DiceLoss
+bigart_101,LARC,Z-Score + HM_onLARC,2,T2w,1.00E-04,DiceLoss
+bigart_102,LARC,Z-Score + HM_onLARC,3,T2w,1.00E-04,DiceLoss
+bigart_103,LARC,Z-Score + HM_onLARC,4,T2w,1.00E-04,DiceLoss
+bigart_104,LARC,Z-Score + HM_onLARC,5,T2w,1.00E-04,DiceLoss
+bigart_105,LARC,Z-Score + HM_onOxy,1,T2w,1.00E-04,DiceLoss
+bigart_106,LARC,Z-Score + HM_onOxy,2,T2w,1.00E-04,DiceLoss
+bigart_107,LARC,Z-Score + HM_onOxy,3,T2w,1.00E-04,DiceLoss
+bigart_108,LARC,Z-Score + HM_onOxy,4,T2w,1.00E-04,DiceLoss
+bigart_109,LARC,Z-Score + HM_onOxy,5,T2w,1.00E-04,DiceLoss

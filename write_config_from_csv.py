@@ -3,7 +3,7 @@ import os
 
 import pandas as pd
 
-def write_file(h5_file, n_channel, test_fold, learning_rate, config_filename):
+def write_file(h5_file, n_channel, test_fold, learning_rate, config_filename, loss):
     template_config = 'bigart_template.json'
     with open(template_config) as f:
         json_data_template = json.load(f)
@@ -19,6 +19,7 @@ def write_file(h5_file, n_channel, test_fold, learning_rate, config_filename):
 
     json_data_template["input_params"]["shape"] = [352, 352, n_channel]
     json_data_template["model_params"]['optimizer']['config']['learning_rate'] = learning_rate
+    json_data_template["model_params"]["loss"]["class_name"] = loss
     # write file to disk
     with open(config_filename, 'w') as json_file:
         json.dump(json_data_template, json_file)
@@ -34,6 +35,7 @@ def read_csv_and_write_config_files():
         config_filename = os.path.join( 'config', row['ID']+'.json')
         test_fold = row['validation_fold']
         learning_rate = row['Learning_rate']
+        loss = row['Loss']
 
         if row['Dataset'] == 'Oxytarget':
             h5_file += 'OxyTarget_'
@@ -60,6 +62,6 @@ def read_csv_and_write_config_files():
         else:
             raise Exception('Check for typos in Normalisation')
 
-        write_file(h5_file, n_channel, test_fold, learning_rate, config_filename)
+        write_file(h5_file, n_channel, test_fold, learning_rate, config_filename, loss)
 
 read_csv_and_write_config_files()

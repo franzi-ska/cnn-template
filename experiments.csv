@@ -44,3 +44,13 @@ bigart_41,LARC,Z-Score,2,T2w,1.00E-04
 bigart_42,LARC,Z-Score,3,T2w,1.00E-04
 bigart_43,LARC,Z-Score,4,T2w,1.00E-04
 bigart_44,LARC,Z-Score,5,T2w,1.00E-04
+bigart_45,LARC,Z-Score + HM_onLARC,1,T2w,1.00E-04
+bigart_46,LARC,Z-Score + HM_onLARC,2,T2w,1.00E-04
+bigart_47,LARC,Z-Score + HM_onLARC,3,T2w,1.00E-04
+bigart_48,LARC,Z-Score + HM_onLARC,4,T2w,1.00E-04
+bigart_49,LARC,Z-Score + HM_onLARC,5,T2w,1.00E-04
+bigart_50,LARC,Z-Score + HM_onOxy,1,T2w,1.00E-04
+bigart_51,LARC,Z-Score + HM_onOxy,2,T2w,1.00E-04
+bigart_52,LARC,Z-Score + HM_onOxy,3,T2w,1.00E-04
+bigart_53,LARC,Z-Score + HM_onOxy,4,T2w,1.00E-04
+bigart_54,LARC,Z-Score + HM_onOxy,5,T2w,1.00E-04

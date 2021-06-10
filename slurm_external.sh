@@ -5,6 +5,8 @@
 #SBATCH --mem=16G                 # Default memory per CPU is 3GB.
 #SBATCH --partition=gpu # Use the verysmallmem-partition for jobs requiring < 10 GB RAM.
 #SBATCH --gres=gpu:1
+#SBATCH --mail-user=franziska.h.knuth@nmbu.no # Email me when job is done.
+#SBATCH --mail-type=ALL
 #SBATCH --output=outputs/unet-test-%A.out
 #SBATCH --error=outputs/unet-test-%A.out
 
@@ -29,7 +31,7 @@ if [ ! -d "$TMPDIR/$USER/hn_delin" ]
     mkdir --parents $TMPDIR/$USER/hn_delin
     fi
 
-for f in $(ls $HOME/datasets/*)
+for f in $(ls $HOME/datasets/headneck/*)
     do
     FILENAME=`echo $f | awk -F/ '{print $NF}'`
     echo $FILENAME

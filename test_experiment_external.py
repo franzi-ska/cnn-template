@@ -30,7 +30,7 @@ if __name__ == '__main__':
     parser.add_argument("--temp_folder", default='', type=str)
     parser.add_argument("--analysis_folder",
                         default='', type=str)
-    parser.add_argument("--meta", default='patient_idx', type=str)
+    parser.add_argument("--meta", default='patient_ids', type=str)
     parser.add_argument("--monitor", default='', type=str)
     parser.add_argument("--memory_limit", default=0, type=int)
 
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     else:
         analysis_folder = ''
 
-    if '2d' in args.log_folder:
+    if 'bigart' in args.log_folder:
         meta = args.meta
     else:
         meta = args.meta.split(',')[0]

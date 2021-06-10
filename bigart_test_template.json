@@ -1,0 +1,7 @@
+{
+    "config": {
+        "filename": "",
+        "test_folds": ["6/352"],
+        "fold_prefix": ""
+    }
+}

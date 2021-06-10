@@ -1,7 +1,23 @@
 import json
+import shutil
 import os
 
 import pandas as pd
+
+
+def copy_model(experiment):
+    n_save = 25
+    src = 'D:\BiGART_results'
+    log = pd.read_csv(os.path.join(src, experiment, 'logs.csv'))
+    n_model = ((log.shape[0]) // n_save) * n_save
+
+    print(experiment, n_model)
+
+    shutil.copyfile(
+        os.path.join(src, experiment, 'model', 'model.{:03}.h5'.format(n_model)),
+        os.path.join('D:\BigART_models', experiment+'.h5')
+    )
+
 
 def write_file(h5_file, n_channel, test_fold, learning_rate, config_filename, loss):
     template_config = 'bigart_template.json'
@@ -64,4 +80,25 @@ def read_csv_and_write_config_files():
 
         write_file(h5_file, n_channel, test_fold, learning_rate, config_filename, loss)
 
+
+
+
+def write_test_config():
+    for id in [0,1,2,3,4,
+               10,11,12,13,14,
+               55,56,57,58,59,
+               65,66,67,68,69]:
+
+        with open('bigart_test_template.json') as f:
+            temp = json.load(f)
+        with open(os.path.join('config','bigart_{}.json'.format(id))) as f:
+            config = json.load(f)
+        temp['config']['filename'] = config["dataset_params"]["config"]["filename"]
+
+        with open(os.path.join('config','bigart_test_{}.json'.format(id)), 'w') as f:
+            json.dump(temp, f)
+
+        copy_model('bigart_'+str(id))
+
 read_csv_and_write_config_files()
+write_test_config()

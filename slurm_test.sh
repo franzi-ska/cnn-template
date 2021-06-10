@@ -31,14 +31,14 @@ if [ ! -d "$TMPDIR/$USER/hn_delin" ]
     mkdir --parents $TMPDIR/$USER/hn_delin
     fi
 
-for f in $(ls $HOME/datasets/headneck/*)
+for f in $(ls $HOME/datasets/*)
     do
     FILENAME=`echo $f | awk -F/ '{print $NF}'`
     echo $FILENAME
     if [ ! -f "$TMPDIR/$USER/hn_delin/$FILENAME" ]
         then
         echo "copying $f"
-        cp -r $HOME/datasets/headneck/$FILENAME $TMPDIR/$USER/hn_delin/
+        cp -r $HOME/datasets/$FILENAME $TMPDIR/$USER/hn_delin/
         fi
     done
 

@@ -49,4 +49,4 @@ echo "Finished seting up files."
 nvidia-modprobe -u -c=0
 
 # Run experiment
-singularity exec --nv deoxys.sif python test_experiment.py $1 $HOME/hnperf/$2
+singularity exec --nv deoxys.sif python test_experiment.py $1 $HOME/performance/$2

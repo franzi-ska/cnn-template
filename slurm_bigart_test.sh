@@ -43,4 +43,4 @@ echo "Finished seting up files."
 nvidia-modprobe -u -c=0
 
 # Run test on external data
-singularity exec --nv deoxys-beta.sif python -u test_experiment_external.py $HOME/bigart_models/bigart_$SLURM_ARRAY_TASK_ID.h5 config/bigart_test_$SLURM_ARRAY_TASK_ID.json $HOME/performance/bigart_$SLURM_ARRAY_TASK_ID
+singularity exec --nv deoxys-beta.sif python -u test_experiment_external.py $HOME/bigart_models/bigart_$SLURM_ARRAY_TASK_ID.h5 config/ $HOME/performance/bigart_$SLURM_ARRAY_TASK_ID bigart_test_$SLURM_ARRAY_TASK_ID.json

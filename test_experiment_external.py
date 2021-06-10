@@ -55,7 +55,7 @@ if __name__ == '__main__':
     else:
         analysis_folder = ''
 
-    if 'bigart' in args.log_folder:
+    if '2d' in args.log_folder:
         meta = args.meta
     else:
         meta = args.meta.split(',')[0]

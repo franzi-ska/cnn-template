@@ -93,12 +93,14 @@ def write_test_config():
             temp = json.load(f)
         with open(os.path.join('config','bigart_{}.json'.format(id))) as f:
             config = json.load(f)
-        temp['config']['filename'] = config["dataset_params"]["config"]["filename"]
+        file = config["dataset_params"]["config"]["filename"]
+        file_parts = file.split('.')
+        temp['config']['filename'] = file_parts[0]+'_wTest.'+file_parts[1]
 
         with open(os.path.join('config','bigart_test_{}.json'.format(id)), 'w') as f:
             json.dump(temp, f)
 
-        copy_model('bigart_'+str(id))
+        # copy_model('bigart_'+str(id))
 
 read_csv_and_write_config_files()
 write_test_config()

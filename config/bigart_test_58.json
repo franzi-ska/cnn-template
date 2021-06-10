@@ -1,1 +1,1 @@
-{"config": {"filename": "/net/fs-1/home01/franzikn/datasets/OxyTarget_T2_ZScore_wTest.h5", "test_folds": ["6/352"], "fold_prefix": ""}}
+{"config": {"filename": "/net/fs-1/home01/franzikn/datasets/OxyTarget_T2_ZScore_wTest.h5", "test_folds": ["6/352"], "fold_prefix": "fold"}}

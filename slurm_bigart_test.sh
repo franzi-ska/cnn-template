@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1                # Use 1 node
 #$SBATCH --ntasks-per-node=1
-#SBATCH --job-name=bigart   # sensible name for the job
+#SBATCH --job-name=bigart_test   # sensible name for the job
 #SBATCH --mem=16G                 # Default memory per CPU is 3GB.
 #SBATCH --partition=gpu # Use the verysmallmem-partition for jobs requiring < 10 GB RAM.
 #SBATCH --gres=gpu:1
@@ -10,7 +10,6 @@
 #SBATCH --output=outputs/bigart_test_%a__%A.out
 #SBATCH --error=outputs/bigart_test_%a__%A.out
 
-
 ## Below you can put your scripts
 # If you want to load module
 module load singularity
@@ -18,11 +17,7 @@ module load singularity
 ## Code
 # If data files aren't copied, do so
 #!/bin/bash
-if [ $# -lt 2 ];
-    then
-    printf "Not enough arguments - %d\n" $#
-    exit 0
-    fi
+
 
 if [ ! -d "$TMPDIR/$USER/hn_delin" ]
     then
@@ -30,14 +25,14 @@ if [ ! -d "$TMPDIR/$USER/hn_delin" ]
     mkdir --parents $TMPDIR/$USER/hn_delin
     fi
 
-for f in $(ls $HOME/datasets/headneck/*)
+for f in $(ls $HOME/datasets/*)
     do
     FILENAME=`echo $f | awk -F/ '{print $NF}'`
     echo $FILENAME
     if [ ! -f "$TMPDIR/$USER/hn_delin/$FILENAME" ]
         then
         echo "copying $f"
-        cp -r $HOME/datasets/headneck/$FILENAME $TMPDIR/$USER/hn_delin/
+        cp -r $HOME/datasets/$FILENAME $TMPDIR/$USER/hn_delin/
         fi
     done
 

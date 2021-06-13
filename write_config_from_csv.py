@@ -53,30 +53,35 @@ def read_csv_and_write_config_files():
         learning_rate = row['Learning_rate']
         loss = row['Loss']
 
-        if row['Dataset'] == 'Oxytarget':
-            h5_file += 'OxyTarget_'
-        elif row['Dataset'] == 'LARC':
-            h5_file += 'LARC_'
-        if row['Channels'] == 'T2w':
+        if isinstance(row['datafile'], str):
+            h5_file += row['datafile']
             n_channel = 1
-            h5_file += 'T2_'
-        elif row['Channels'] == 'T2w + DW':
-            n_channel = 2
-            h5_file += 'T2DW_'
-        else:
-            raise Exception('Check for typos in Channels')
-
-        if row['Normalisation'] == 'Z-Score':
-            h5_file += 'ZScore.h5'
-        elif row['Normalisation'] == 'Z-Score + HM':
-            h5_file += 'MHZScore.h5'
-        elif row['Normalisation'] == 'Z-Score + HM_onLARC':
-            h5_file += 'MHZScore_onLARC.h5'
-        elif row['Normalisation'] == 'Z-Score + HM_onOxy':
-            h5_file += 'MHZScore_onOxy.h5'
 
         else:
-            raise Exception('Check for typos in Normalisation')
+            if row['Dataset'] == 'Oxytarget':
+                h5_file += 'OxyTarget_'
+            elif row['Dataset'] == 'LARC':
+                h5_file += 'LARC_'
+            if row['Channels'] == 'T2w':
+                n_channel = 1
+                h5_file += 'T2_'
+            elif row['Channels'] == 'T2w + DW':
+                n_channel = 2
+                h5_file += 'T2DW_'
+            else:
+                raise Exception('Check for typos in Channels')
+
+            if row['Normalisation'] == 'Z-Score':
+                h5_file += 'ZScore.h5'
+            elif row['Normalisation'] == 'Z-Score + HM':
+                h5_file += 'MHZScore.h5'
+            elif row['Normalisation'] == 'Z-Score + HM_onLARC':
+                h5_file += 'MHZScore_onLARC.h5'
+            elif row['Normalisation'] == 'Z-Score + HM_onOxy':
+                h5_file += 'MHZScore_onOxy.h5'
+
+            else:
+                raise Exception('Check for typos in Normalisation')
 
         write_file(h5_file, n_channel, test_fold, learning_rate, config_filename, loss)
 
@@ -103,4 +108,5 @@ def write_test_config():
         # copy_model('bigart_'+str(id))
 
 read_csv_and_write_config_files()
-write_test_config()
+# write_test_config()
+# copy_model('bigart_0')

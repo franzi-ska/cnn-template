@@ -1,0 +1,7 @@
+{
+    "config": {
+        "filename": "/net/fs-1/home01/franzikn/datasets/LARC_T2_MHZScore_onOxy.h5",
+        "test_folds": ["1/352", "2/352", "3/352", "4/352", "5/352"],
+        "fold_prefix": "fold"
+    }
+}

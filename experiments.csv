@@ -109,18 +109,18 @@ bigart_106,LARC,Z-Score + HM_onOxy,2,T2w,1.00E-04,BinaryFbetaLoss,,
 bigart_107,LARC,Z-Score + HM_onOxy,3,T2w,1.00E-04,BinaryFbetaLoss,,
 bigart_108,LARC,Z-Score + HM_onOxy,4,T2w,1.00E-04,BinaryFbetaLoss,,
 bigart_109,LARC,Z-Score + HM_onOxy,5,T2w,1.00E-04,BinaryFbetaLoss,,
-bigart_110,Oxy+LARC ,Z-Score,1,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
-bigart_111,Oxy+LARC ,Z-Score,2,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
-bigart_112,Oxy+LARC ,Z-Score,3,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
-bigart_113,Oxy+LARC ,Z-Score,4,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
-bigart_114,Oxy+LARC ,Z-Score,5,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
-bigart_115,Oxy+LARC ,Z-Score + HM_both_on_Oxy,1,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
-bigart_116,Oxy+LARC ,Z-Score + HM_both_on_Oxy,2,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
-bigart_117,Oxy+LARC ,Z-Score + HM_both_on_Oxy,3,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
-bigart_118,Oxy+LARC ,Z-Score + HM_both_on_Oxy,4,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
-bigart_119,Oxy+LARC ,Z-Score + HM_both_on_Oxy,5,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
-bigart_120,Oxy+LARC ,Z-Score + HM_both_on_MIXED,1,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
-bigart_121,Oxy+LARC ,Z-Score + HM_both_on_MIXED,2,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
-bigart_122,Oxy+LARC ,Z-Score + HM_both_on_MIXED,3,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
-bigart_123,Oxy+LARC ,Z-Score + HM_both_on_MIXED,4,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
-bigart_124,Oxy+LARC ,Z-Score + HM_both_on_MIXED,5,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
+bigart_110,Oxy+LARC,Z-Score,1,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
+bigart_111,Oxy+LARC,Z-Score,2,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
+bigart_112,Oxy+LARC,Z-Score,3,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
+bigart_113,Oxy+LARC,Z-Score,4,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
+bigart_114,Oxy+LARC,Z-Score,5,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_ZScore_wTest.h5
+bigart_115,Oxy+LARC,Z-Score + HM_both_on_Oxy,1,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
+bigart_116,Oxy+LARC,Z-Score + HM_both_on_Oxy,2,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
+bigart_117,Oxy+LARC,Z-Score + HM_both_on_Oxy,3,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
+bigart_118,Oxy+LARC,Z-Score + HM_both_on_Oxy,4,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
+bigart_119,Oxy+LARC,Z-Score + HM_both_on_Oxy,5,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onOxy.h5
+bigart_120,Oxy+LARC,Z-Score + HM_both_on_MIXED,1,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
+bigart_121,Oxy+LARC,Z-Score + HM_both_on_MIXED,2,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
+bigart_122,Oxy+LARC,Z-Score + HM_both_on_MIXED,3,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
+bigart_123,Oxy+LARC,Z-Score + HM_both_on_MIXED,4,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5
+bigart_124,Oxy+LARC,Z-Score + HM_both_on_MIXED,5,T2w,1.00E-04,BinaryFbetaLoss,,OxyANDLARC_T2_MHZScore_onMIXED.h5

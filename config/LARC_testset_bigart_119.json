@@ -1,0 +1,7 @@
+{
+    "config": {
+        "filename": "/net/fs-1/home01/franzikn/datasets/traditionalSplit_LARC_TS_MHZScoreOnOxy.h5",
+        "test_folds": ["test/352"],
+        "fold_prefix": ""
+    }
+}

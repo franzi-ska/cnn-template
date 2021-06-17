@@ -107,6 +107,9 @@ def write_test_config():
 
         # copy_model('bigart_'+str(id))
 
-read_csv_and_write_config_files()
+# read_csv_and_write_config_files()
 # write_test_config()
 # copy_model('bigart_0')
+
+for i in range(5):
+    copy_model('bigart_{}'.format(115+i))

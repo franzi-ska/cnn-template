@@ -31,7 +31,7 @@ if [ ! -d "$TMPDIR/$USER/hn_delin" ]
     mkdir --parents $TMPDIR/$USER/hn_delin
     fi
 
-for f in $(ls $HOME/datasets/headneck/*)
+for f in $(ls $HOME/datasets/*)
     do
     FILENAME=`echo $f | awk -F/ '{print $NF}'`
     echo $FILENAME
@@ -50,3 +50,5 @@ nvidia-modprobe -u -c=0
 
 # Run test on external data
 singularity exec --nv deoxys-beta.sif python -u test_experiment_external.py $3 $HOME/performance/$2 $1
+
+dataset
